@@ -10,6 +10,7 @@ setwd(dirname(inputfilepath))
 #read CSV file
 Input.Bank.Statement  <- read.csv(inputfilepath,header=TRUE)
 
+#extract required columns of data
 Temp.sub <- Input.Bank.Statement[, c(8, 14, 15,18)]
 
 
